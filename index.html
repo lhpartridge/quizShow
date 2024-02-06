@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Jeu tele</title>
+</head>
+<body>
+    <header class="header" id="header">
+        <h1 class="text-center d-none" id="heading">jeu de t&eacute;l&eacute;</h1>
+        <div class="container">
+            <div class="row">
+                <!-- <div class="col-4"> -->
+                <img src="media/logo.jpg" alt="quiz logo" id="logo">
+                <!-- </div> -->
+                <div class="col-8">
+                    <p class="text d-block" id="messageBoard"></p>
+                    <button class="btn btn-danger" id="nextBtn" disabled>Next</button>
+                </div>
+                <img src="media/logo.jpg" alt="quiz logo" id="logo">
+            </div>
+        </div>
+    </header>
+    <main class="main" id="main">
+        <section class="section" id="section">
+            <div class="container">
+                <div class="row " id="scene">
+                    <div class="col-2" id="host">
+                        <img src="media/host.png" alt="" id="host">
+                        <button class="btn btn-primary" id="start">Click to start </button>
+                    </div>
+                    <div class="col-5 gameboard" id="gameboard">
+                        <div class="board" id="board0">
+                            <!-- <h3 class="round-title text-center text-uppercase" id="title1">Premier tour</h3> -->
+                            <!-- <div class="question"> -->
+                                <!-- <h4 class="questions text-center" id="round1Question">Reconnaissez-vous ces images de Paris?</h4> -->
+                                <div class="img-frame mx-auto" id="round0Frame">
+                                    <img src="media/blank.png" alt="la tour Eiffel" class="img-fluid d-block mx-auto" id="round0Img">
+                                </div>                                
+                            <!-- </div> -->
+
+                        </div>
+                        <div class="board d-none" id="board1">
+                            <!-- <h3 class="round-title text-center text-uppercase" id="title1">round 1</h3> -->
+                            <div class="question">
+                                <h4 class="questions text-center" id="round1Question">Nommez ce monument de Paris</h4>
+                                <div class="img-frame d-block mx-auto">
+                                    <img src="" alt="" class="img-fluid" id="round1Img">
+                                </div>                                
+                            </div>
+                            <div class="row answer-choices justify-content-between">
+                                <div class="answer-choice" id="answerChoice1">
+                                    <p class="answers text-center" id="answer1"></p>
+                                </div>
+                                <div class="answer-choice" id="answerChoice2">
+                                    <p class="answers text-center" id="answer2"></p>
+                                </div>
+                                <div class="answer-choice" id="answerChoice3">
+                                    <p class="answers text-center" id="answer3"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="board d-none" id="board2"></div>
+                        <div class="board d-none" id="board3"></div>
+                    </div>
+                    <div class="col-5" id="contestants">
+                        <div class="row position-relative">
+                            <div class="col-4">
+                                <img src="media/bolt1.gif" alt="" class="bolt d-none" id="bolt1">
+                                <img src="media/boy.png" alt="" class="contestant position-absolute" id="contestant1">
+                            </div>
+                            <div class="col-4">
+                                <img src="media/bolt1.gif" alt="" class="bolt d-none" id="bolt2">
+                                <img src="media/girl2.png" alt="" class="contestant position-absolute" id="contestant2">
+                            </div>
+                            <div class="col-4">
+                                <img src="media/bolt1.gif" alt="" class="bolt d-none" id="bolt3">
+                                <img src="media/boy2.png" alt="" class="contestant position-absolute" id="contestant3">
+                            </div>
+                        </div>
+                        <div class="row position-relative" id="podiums">
+                            <div class="col-4 podium-display" id="podium1">
+                                <div class="name text-center" id="name1"></div>
+                                <div class="score text-center" id="score1"></div>
+                            </div>
+                            <div class="col-4 podium-display" id="podium2">
+                                <div class="name text-center" id="name2"></div>
+                                <div class="score text-center" id="score2"></div>
+                            </div>
+                            <div class="col-4 podium-display" id="podium3">
+                                <div class="name text-center" id="name3"></div>
+                                <div class="score text-center" id="score3"></div>
+                            </div>
+                            <img src="media/podiums.png" alt="" class="" id="podiumImg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer" id="footer">
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
